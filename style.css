@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 65.5%;
+}
+
+.box{
+    padding: 5rem;
+}
+
+
+.gridContainer{
+    border: 1rem solid #333;
+    display: grid;
+
+     /* 
+        fr is a fraction of the grid. 1fr will create even spacing
+    */
+  
+    /* 
+    Depending on the nume of differen values you in put will
+    represent the number of columns in the grid.
+    grid-template-colums: value value value:
+    */
+
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+
+    /* this is a short hand way of writing the above example
+    repeat (first value is the number of colums, 1fr)
+    */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-template-areas: "four five three" "two . one ";
+
+
+
+
+   
+}
+
+
+.one{
+    background: tomato;
+    grid-area: one;
+
+}
+.two{
+    background: palegreen;
+    grid-area: two;
+}
+.three{
+    background: blue;
+    grid-area: three;
+}
+.four{
+    background: pink;
+    grid-area: four;
+}
+/* .four{
+    background: turquoise;
+} */
+.five{
+    background: violet;
+    grid-area: five;
+}
+.five{
+    background: violet;
+    grid-area: five;
+}
